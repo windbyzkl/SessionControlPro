@@ -19,7 +19,7 @@ public class HttpBody {
 	@Override
 	public String toString() {
 		return "HttpBody [deliverySessionId=" + deliverySessionId
-				+ ", endTime=" + endTime + ", startTime=" + startTime + "]";
+				+ ", endTime=" + (startTime+1000) + ", startTime=" + startTime + "] is started";
 	}
 	public void setStartTime(long startTime) {
 		this.startTime = startTime;

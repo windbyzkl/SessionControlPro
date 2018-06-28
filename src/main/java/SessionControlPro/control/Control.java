@@ -3,6 +3,7 @@ package SessionControlPro.control;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,10 @@ public class Control {
         }
 		return "helloworld"+System.currentTimeMillis();
     }
+	@ExceptionHandler(Exception.class)
+	public String handleException(Exception e) {
+	    return "error:"+e.getMessage();
+	}
 	@RequestMapping("/nbi/deliverysession")
 	public String start(int id){
 		HttpBody body=new HttpBody(id);
