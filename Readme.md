@@ -1,6 +1,5 @@
 # SessionControlPro
 test
-test
 SessionControl控制<br>
 启动方式:运行app.java<br>
 项目git地址https://github.com/windbyzkl/SessionControlPro<br>
