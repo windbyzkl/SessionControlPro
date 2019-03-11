@@ -37,7 +37,7 @@ public class Action implements Runnable{
 	}
 	public void setTime(long time){
 		this.time=time;
-		write("»áÒéÊ±¼äÖØÖÃÔÚ"+limitTime+"ºó½áÊø");
+		write("ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+limitTime+"ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 	public void stop(){
 //		System.out.println(id+"is started at"+endTime);
@@ -45,11 +45,11 @@ public class Action implements Runnable{
 			set.remove(id);
 		}
 		if(set.isEmpty()){
-			System.out.println("»á»°½áÊø£¡");
-			write("»á»°½áÊø£¡");
+			System.out.println("ï¿½á»°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			write("ï¿½á»°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}else{
-			System.out.println("»¹ÓÐ"+set.size()+"ÈËÔÚÏß");
-			write("»¹ÓÐ"+set.size()+"ÈËÔÚÏß");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½"+set.size()+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			write("ï¿½ï¿½ï¿½ï¿½"+set.size()+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 	}
 	public void write(String str){
@@ -94,13 +94,13 @@ public class Action implements Runnable{
 		int year = calendar.get(Calendar.YEAR);
 		int month = calendar.get(Calendar.MONTH);
 		int day = calendar.get(Calendar.DAY_OF_MONTH);
-		int hour = calendar.get(Calendar.HOUR_OF_DAY);//24Ð¡Ê±ÖÆ
+		int hour = calendar.get(Calendar.HOUR_OF_DAY);//24Ð¡Ê±ï¿½ï¿½
 		int minute = calendar.get(Calendar.MINUTE);
 		int second = calendar.get(Calendar.SECOND);
-		System.out.println(year + "Äê" + (month + 1) + "ÔÂ" + day + "ÈÕ"
-				+ hour + "Ê±" + minute + "·Ö" + second + "Ãë");
+		System.out.println(year + "ï¿½ï¿½" + (month + 1) + "ï¿½ï¿½" + day + "ï¿½ï¿½"
+				+ hour + "Ê±" + minute + "ï¿½ï¿½" + second + "ï¿½ï¿½");
 		
-		return year + "Äê" + (month + 1) + "ÔÂ" + day + "ÈÕ"
-		+ hour + "Ê±" + minute + "·Ö" + second + "Ãë";
+		return year + "ï¿½ï¿½" + (month + 1) + "ï¿½ï¿½" + day + "ï¿½ï¿½"
+		+ hour + "Ê±" + minute + "ï¿½ï¿½" + second + "ï¿½ï¿½";
 	}
 }

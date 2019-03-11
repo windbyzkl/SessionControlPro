@@ -3,6 +3,8 @@ package SessionControlPro;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import static org.springframework.boot.SpringApplication.*;
+
 
 /**
  * Hello world!
@@ -13,6 +15,6 @@ public class App
 {
     public static void main( String[] args )
     {
-    	SpringApplication.run(App.class, args);
+        run(App.class, args);
     }
 }
