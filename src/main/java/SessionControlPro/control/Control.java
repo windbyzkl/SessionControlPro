@@ -31,6 +31,6 @@ public class Control {
 	@RequestMapping("/nbi/setLimitTime")
 	public String setTime(int limitTime){
 		Action.setLimitTime(limitTime);
-		return "设置结束时间为"+limitTime;
+		return "锟斤拷锟矫斤拷锟斤拷时锟斤拷为"+limitTime;
 	}
 }
